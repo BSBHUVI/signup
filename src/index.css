@@ -123,7 +123,7 @@ code {
   justify-content: center;
  }
  .container{
-  width: 50vw;
+  width: 50%;
   height: 50vh;
   -webkit-box-shadow: 10px 7px 66px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 7px 66px 0px rgba(0,0,0,0.75);
@@ -132,5 +132,6 @@ code {
  }
  p{
   font-size: small;
+  color: red;
  }
  
