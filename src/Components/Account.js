@@ -14,7 +14,7 @@ function Account() {
   return (
     <div className='Account'>
     <div className="container">
-      <h1>hello {user.email}</h1>
+      <p>hello {user.email}</p>
       <button onClick={logoutuser}>logout</button>
       <Link to='/signup/Account/next'>next</Link>
       <Outlet/>

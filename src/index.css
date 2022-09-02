@@ -123,11 +123,14 @@ code {
   justify-content: center;
  }
  .container{
-  width: 90vw;
-  height: 90vh;
+  width: 50vw;
+  height: 50vh;
   -webkit-box-shadow: 10px 7px 66px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 7px 66px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 7px 66px 0px rgba(0,0,0,0.75);
 
+ }
+ p{
+  font-size: small;
  }
  
