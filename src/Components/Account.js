@@ -12,11 +12,13 @@ function Account() {
 
   }
   return (
-    <div>
+    <div className='Account'>
+    <div className="container">
       <h1>hello {user.email}</h1>
       <button onClick={logoutuser}>logout</button>
       <Link to='/signup/Account/next'>next</Link>
       <Outlet/>
+    </div>
     </div>
   )
 }
