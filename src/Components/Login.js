@@ -12,7 +12,7 @@ function Login() {
     e.preventDefault()
     try{
       await login(email,password)
-      navigate("/signup/Account")
+      navigate("/signup/navbar/account")
 
     }catch(err){
       alert(err.message)
@@ -25,7 +25,7 @@ function Login() {
   return (
     
      <div className='App'>
-      <div className="card">
+      <div className="card-normal">
   <h4 className="title">LOGIN</h4>
   <form >
     <div className="field">

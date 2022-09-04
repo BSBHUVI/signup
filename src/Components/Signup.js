@@ -23,7 +23,7 @@ function Signup() {
     }
   return (
     <div className='App'>
-      <div className="card">
+      <div className="card-normal">
   <h4 className="title">SIGN UP</h4>
   <form >
     <div className="field">

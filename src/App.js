@@ -4,16 +4,22 @@ import Login from './Components/Login';
 import {Usercontext} from "./context/Usercontext"
 import Account from './Components/Account';
 import Protectedroutes from './Components/Protectedroutes';
-import Nextpage from './Components/Nextpage';
+import "./style.css"
+import Orders from './Components/Orders';
+import Navbar from './Components/Navbar';
+
 function App() {
   return (
-    <div className="App">
+    <div>
     <Usercontext>
     <Router>
       <Routes>
-      <Route path='/signup/Account' element={<Protectedroutes><Account/></Protectedroutes>}>
-        <Route path='/signup/Account/next' element={<Nextpage/>}/>
+      <Route path='/signup/navbar' element={<Protectedroutes><Navbar/></Protectedroutes>}>
+      <Route path='account' element={<Account/>}/>
+        <Route path='orders' element={<Orders/>}/>
       </Route>
+       
+    
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/signup/login' element={<Login/>}/>
         
