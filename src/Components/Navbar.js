@@ -5,7 +5,7 @@ import {useUserAuth} from '../context/Usercontext'
 
 
 function Navbar() {
-  const {user,logout}=useUserAuth()
+  const {logout}=useUserAuth()
   const navigate=useNavigate()
 
   const logoutuser=()=>{

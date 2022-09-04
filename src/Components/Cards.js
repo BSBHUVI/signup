@@ -1,8 +1,10 @@
 import React from 'react'
 import '../style.css'
+import {useUserAuth} from '../context/Usercontext'
 
 
 function Cards({lists}) {
+  const {user}=useUserAuth()
   return (
     <>
  {
@@ -14,6 +16,7 @@ function Cards({lists}) {
     <p className="card-text">{list.description}</p>
     <a href="#" className="btn btn-primary">BUY at {list.price} from store✔️</a>
   </div>
+  {user.email=="bhuvansbhuvan467@gmail.com" && <button>delete</button>}
 
 </div>
     })
