@@ -11,7 +11,7 @@ function Account() {
     axios.get('/lists/sync').then((response)=>{
       setLists(response.data)
     })
-  })
+  },[])
 
 
   return (

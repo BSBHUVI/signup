@@ -15,8 +15,8 @@ function App() {
     <Router>
       <Routes>
       <Route path='/signup/navbar' element={<Protectedroutes><Navbar/></Protectedroutes>}>
-      <Route path='account' element={<Account/>}/>
-        <Route path='orders' element={<Orders/>}/>
+      <Route path='/signup/navbar/account' element={<Account/>}/>
+        <Route path='/signup/navbar/orders' element={<Orders/>}/>
       </Route>
        
     
