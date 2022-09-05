@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/126.37bb8717.chunk.js","mappings":"6HAWA,UATA,WACE,OACE,0BACE,8CAIL,C","sources":["Components/Orders.js"],"sourcesContent":["import React from 'react'\r\n\r\nfunction Orders() {\r\n  return (\r\n    <div>\r\n      <h1>i am orders page</h1>\r\n     \r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Orders\r\n"],"names":[],"sourceRoot":""}
