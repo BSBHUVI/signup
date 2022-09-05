@@ -32,7 +32,7 @@ function Orders() {
     <p className="card-text">{order.description}</p>
    
     <button data-text="Awesome" class="button">
-    <span class="actual-text">&nbsp;BUY NOW&nbsp;</span>
+   <a  href="https://paytm.me/EY2G-JP"><span class="actual-text">&nbsp;BUY NOW&nbsp;</span></a> 
     <span class="hover-text" aria-hidden="true">&nbsp;&nbsp;</span>
 </button>
 
