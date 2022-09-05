@@ -1,10 +1,22 @@
 import React from 'react'
 import '../style.css'
 import {useUserAuth} from '../context/Usercontext'
+import axios from './Axios'
 
 
 function Cards({lists}) {
   const {user}=useUserAuth()
+  
+  function del(id) {
+    axios
+      .delete("/lists/" + id)
+      .then(() => {
+        alert("deleted");
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  }
   return (
     <>
  {
@@ -16,7 +28,7 @@ function Cards({lists}) {
     <p className="card-text">{list.description}</p>
     <a href="#" className="btn btn-primary">BUY at {list.price} from store✔️</a>
   </div>
-  {user.email=="bhuvansbhuvan467@gmail.com" && <button>delete</button>}
+  {user.email==="bhuvansbhuvan467@gmail.com" && <button onClick={() => del(list._id)}>delete</button>}
 
 </div>
     })

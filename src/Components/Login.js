@@ -39,7 +39,7 @@ function Login() {
       <input value={password} onChange={(e)=>{setPassword(e.target.value)}} autoComplete="off"  id="logpass" placeholder="Password" className="input-field" name="logpass" type="password"/>
     </div>
     <button onClick={handlesubmit} className="btn" type="submit">LOGIN</button>
-    <span >Create a new Account <Link to="/signup">SIGN UP</Link></span>
+    <span className='title' >Create a new Account <Link to="/signup">SIGN UP</Link></span>
     
 
   

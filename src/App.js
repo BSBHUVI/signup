@@ -1,12 +1,17 @@
 import Signup from './Components/Signup';
+import React from 'react';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Login from './Components/Login';
 import {Usercontext} from "./context/Usercontext"
-import Account from './Components/Account';
 import Protectedroutes from './Components/Protectedroutes';
 import "./style.css"
-import Orders from './Components/Orders';
+import Loading from './Components/Loading';
+
 import Navbar from './Components/Navbar';
+
+const LazyAccount=React.lazy(()=>import('./Components/Account'))
+const LazyOrders=React.lazy(()=>import('./Components/Orders'))
+const LazyAdmin=React.lazy(()=>import('./Components/Admin'))
 
 function App() {
   return (
@@ -15,8 +20,11 @@ function App() {
     <Router>
       <Routes>
       <Route path='/signup/navbar' element={<Protectedroutes><Navbar/></Protectedroutes>}>
-      <Route path='/signup/navbar/account' element={<Account/>}/>
-        <Route path='/signup/navbar/orders' element={<Orders/>}/>
+      <Route path='/signup/navbar/account' element={<React.Suspense fallback={<Loading/>}><LazyAccount/></React.Suspense>}/>
+        <Route path='/signup/navbar/orders' element={<React.Suspense fallback={<Loading/>}><LazyOrders/></React.Suspense>}/>
+        <Route path='/signup/navbar/admin' element={<React.Suspense fallback={<Loading/>}><LazyAdmin/></React.Suspense>}/>
+       
+
       </Route>
        
     

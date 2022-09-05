@@ -37,7 +37,7 @@ function Signup() {
       <input value={password} onChange={(e)=>{setPassword(e.target.value)}} autoComplete="off"  id="logpass" placeholder="Password" className="input-field" name="logpass" type="password"/>
     </div>
     <button onClick={handlesubmit} className="btn" type="submit">SIGN UP</button>
-    <span >Already have an Account <Link to="/signup/login">LOG IN</Link></span>
+    <span className='title' >Already have an Account <Link to="/signup/login">LOG IN</Link></span>
     
 
   
