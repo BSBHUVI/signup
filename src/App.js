@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
     <Usercontext>
-    <Router>
+    <Router basename='/signup'>
       <Routes>
       <Route path='/signup/navbar' element={<Protectedroutes><Navbar/></Protectedroutes>}>
       <Route path='/signup/navbar/account' element={<React.Suspense fallback={<Loading/>}><LazyAccount/></React.Suspense>}/>
