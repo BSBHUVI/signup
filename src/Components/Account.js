@@ -6,6 +6,7 @@ import axios from './Axios'
 
 
 function Account() {
+
   const [lists,setLists]=useState([])
   useEffect(()=>{
     axios.get('/lists/sync').then((response)=>{
